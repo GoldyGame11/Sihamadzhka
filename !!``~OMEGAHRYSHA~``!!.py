@@ -1,3 +1,12 @@
+import logging
+
+logging.basicConfig(
+    filename='omegahrusha.log',
+    filemode='a',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s')
+
+
 class Calculation:
     def __init__(self, a, b):
         self.a = a
